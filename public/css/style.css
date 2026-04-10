@@ -1,0 +1,248 @@
+body{
+    font-family:"Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+
+/* Navbar */
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+.fa-compass{
+    color:#fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 !important;
+}
+
+/* Search */
+.search-inp{
+    border-radius: 25px;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    font-size: 1rem;
+}
+
+/* Footer */
+.f-info-links{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover{
+    text-decoration: underline;  
+}
+.f-info-links, .f-info-socials,.f-info-brand{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-info-socials i{
+    font-size:1.2rem;
+    margin-right: 1rem;
+}
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* Cards */
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 0.4rem;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-text p{
+    font-weight: 400 !important;
+}
+.listing-link{
+    text-decoration: none;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.1;
+    background-color: white;
+}
+
+/* New Page */
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Edit Page */
+.edit-btn{
+   background-color: #fe424d !important;
+   border:none !important;
+}
+
+/* Show Page */
+.show-img{
+    height: 30vh;
+}
+.btns{
+    display: flex;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Map */
+#map{
+    height: 400px;
+    width: 80vh;
+}
+
+/* ================================
+   MEDIA QUERIES
+================================ */
+
+/* Tablet — 768px se neeche */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        height: auto;
+        padding: 0.75rem 1rem;
+    }
+
+    .search-inp {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .search-btn {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    /* Filters */
+    #filters {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 0.5rem;
+    }
+
+    .filter {
+        margin-right: 1rem;
+        min-width: 60px;
+    }
+
+    .tax-toggle {
+        margin-left: 1rem;
+        min-width: 200px;
+    }
+
+    /* Cards */
+    .card-img-top {
+        height: 15rem !important;
+    }
+
+    /* Show Page */
+    .show-card {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .show-img {
+        height: 25vh;
+    }
+
+    .btns {
+        flex-direction: row;
+        gap: 0.5rem;
+        padding-left: 1rem;
+    }
+
+    /* Map */
+    #map {
+        height: 300px;
+        width: 100%;
+    }
+
+    /* Forms - new/edit */
+    .col-8.offset-2 {
+        width: 100% !important;
+        margin-left: 0 !important;
+        padding: 0 1rem;
+    }
+
+    /* Show page columns */
+    .col-8.offset-3,
+    .col-6.offset-3 {
+        width: 100% !important;
+        margin-left: 0 !important;
+        padding: 0 1rem;
+    }
+
+    /* Reviews */
+    .card.col-5 {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+}
+
+/* Mobile — 480px se neeche */
+@media (max-width: 480px) {
+
+    /* Navbar */
+    .fa-compass {
+        font-size: 1.5rem;
+    }
+
+    /* Filters */
+    .filter p {
+        font-size: 0.7rem;
+    }
+
+    /* Cards */
+    .card-img-top {
+        height: 12rem !important;
+    }
+
+    /* Show Page */
+    .show-img {
+        height: 20vh;
+    }
+
+    /* Map */
+    #map {
+        height: 250px;
+        width: 100%;
+    }
+
+    /* Footer */
+    .f-info {
+        height: auto;
+        padding: 1rem;
+    }
+
+    /* Buttons */
+    .btns a, .btns button {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.75rem;
+    }
+}
